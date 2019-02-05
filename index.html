@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Agent-based modelling in archaeology</title>
+
+		<meta name="description" content="Made with Reveal.JS, A framework for easily creating beautiful presentations using HTML, by Hakim El Hattab">
+		<meta name="author" content="Andreas Angourakis">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/CDAL.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+
+	<body>
+
+		<div class="reveal">
+			<div id="background-header">
+				<div style="text-align:center; position:absolute; top:3%; left: 10%; font-size:33%; color:darkcyan">
+					<i>Angourakis - CDAL series</i>
+				</div>
+				<div style="text-align:left; position:absolute; top:6%; left: 10%; font-size:33%; color:gray">
+					<b>Cambridge, 5 February 2019</b>
+				</div>
+				<div style="text-align:right; position:absolute; top:6%; right: 10%; font-size:33%; color:gray">
+					<b><a href="https://andros-spica.github.io/CDAL-Angourakis-2019/">https://andros-spica.github.io/CDAL-Angourakis-2019/</a></b>
+				</div>
+			</div>
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+            	<section data-state="title-page">
+					<h2>Agent-based modelling in archaeology</h2>
+					Why do it, how to do it, and what to expect
+					<p>
+						<small style="color:gainsboro;">Andreas <b>Angourakis</b></small> 
+						<small><a href="https://twitter.com/AndrosSpica" target="_blank"><i style="color:dodgerblue">@AndrosSpica</i></a></small>
+					</p>
+					<div style="font-size: 50%">available at 
+						<a href="https://andros-spica.github.io/CDAL-Angourakis-2019/">https://andros-spica.github.io/CDAL-Angourakis-2019/</a><br>
+						<a href="https://andros-spica.github.io/CDAL-Angourakis-2019/index.html?print-pdf">https://andros-spica.github.io/CDAL-Angourakis-2019/index.html?print-pdf</a> (printable version)
+					</div>
+					<p style="font-size:33%">click on images to consult source</p>
+					<a href="https://www.arch.cam.ac.uk/" target="_blank">
+						<img src="https://www.cam.ac.uk/sites/www.cam.ac.uk/files/inner-images/logo.jpg" alt="U. Cambridge logo" 
+						style="width: 300px; border: none; box-shadow: none"/>
+					</a>
+					<a href="https://www.mcdonald.cam.ac.uk/" target="_blank">
+						<img src="https://www.mcdonald.cam.ac.uk/images/logos/McD-logo3/image_logo" alt="McDonald Institute logo" 
+						style="width: 80px; border: none; box-shadow: none"/>
+						<b style="font-size: 60%; color:darkgray; vertical-align:150%">McDonald Institute for Archaeological Research</b>
+					</a>
+				</section>
+				
+				<section>
+					<h3>The '<i style="color:darkorange">why</i>&nbsp;'</h3>
+				</section>
+				<section id="fragments">
+					<h3>Archaeology</h3>
+					<div id="left50">
+						<h4><i class="fragment" style="color:red">Challenges</i></h4>
+						<ul>
+							<li class="fragment">fragmentary, coarse data</li>
+							<li class="fragment">indirect evidence</li>
+							<li class="fragment">(mostly) not experimental</li>
+							<li class="fragment">semantic ambiguity</li>
+							<li class="fragment">few consensual models</li>
+							<li class="fragment">debate on core aspects</li>
+						</ul>
+					</div>
+					<div id="right40">
+						<h4><i class="fragment" style="color:greenyellow">Opportunities</i></h4>
+						<ul>
+							<li class="fragment">long-term perspective</li>
+							<li class="fragment">materiality</li>
+							<li class="fragment">holistic, "naive", out-of-box thinking</li>
+							<li class="fragment">permeability to other disciplines</li>
+						</ul>
+					</div>
+				</section>
+				<section id="fragments" data-background="https://upload.wikimedia.org/wikipedia/commons/e/e6/Conways_game_of_life_breeder_animation.gif">
+					<h3 style="color:black">The prism of <i style="color:greenyellow">complexity science</i></h3>
+					<div class="fragment" style="background-color: black; opacity: 0.8">
+						<ul>
+							<li class="fragment"><a href="https://en.wikipedia.org/wiki/Complex_system" target="_blank">Complex system</a></li>
+							<li class="fragment"><i style="color:greenyellow">complexity</i>: number and diversity of causal relationships</li>
+							<li class="fragment"><i style="color:brown">nonlinearity</i>, <i style="color:darkgoldenrod">self-organisation</i> and <i style="color:lightseagreen">self-similarity</i></li>
+							<li class="fragment">
+								Unifying frameworks:
+								<ul>
+									<li class="fragment">theoretical (e.g., <i style="color:greenyellow">generative social science</i>, <i style="color:greenyellow">socio-ecological systems</i>)</li>
+									<li class="fragment">methodological (e.g., <i style="color:greenyellow">open databases</i>, <i style="color:greenyellow">GIS</i>, <i style="color:greenyellow">ABM</i>) </li>
+								</ul>
+							</li>
+						</ul>
+						<br>
+					</div>
+					<br>
+					<div style="font-size: 40%">
+						<a href="https://commons.wikimedia.org/wiki/File:Conways_game_of_life_breeder_animation.gif" target="_blank">Breeder pattern in Conway's Game of Life</a>
+						<br>
+						<i>derivative work: George (talk)Conways_game_of_life_breeder.png: Hyperdeath [CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0)], via Wikimedia Commons</i>
+					</div>
+				</section>
+				<section id="fragments" data-background="https://cdn-images-1.medium.com/max/1600/1*yrVzKSeqaA1O3G3HF-AHlw.gif">
+					<h3>Agent-based modelling (<i style="color:greenyellow">ABM</i> )</h3>
+					<div id="left50" style="color:black">
+						<ul>
+							<li class="fragment">dynamics</li>
+							<li class="fragment">Formalisation</li>
+							<li class="fragment">rules</li>
+							<li class="fragment">population</li>
+							<li class="fragment">bottom-up</li>
+							<li class="fragment">stochasticity</li>
+						</ul>
+					</div>
+					<div id="right50">
+						<div class="fragment">&rarr; simulation</div>
+						<div class="fragment">&rarr; defined logic rules</div>
+						<div class="fragment">&rarr; algorithms</div>
+						<div class="fragment">&rarr; distributed processes</div>
+						<div class="fragment">&rarr; emergent properties</div>
+						<div class="fragment">&rarr; probabilistic results</div>
+						<br><br>
+						<div style="font-size: 40%">
+							Flocking behaviour in '<a href="https://link.medium.com/1uqbZW0M2T" target="_blank">Behavioral systems</a>' by Danil Nagy in
+							'Generative Design', medium.com
+						</div>
+					</div>
+				</section>
+				<section id="fragments" data-background="images/Gale-Shapley-algorithm.png">
+					<div class="fragment">
+						<div id="left50">
+							<div style="width: 450px; border: none; box-shadow: none; background-color: white">
+								<a href="http://jasss.soc.surrey.ac.uk/14/3/7.html" target="_blank">
+									<img src="http://jasss.soc.surrey.ac.uk/14/3/7/rebaudo_et_al_figure1_600px.png" alt="Rebaudo et al. 2011" style="width: 450px; border: none; box-shadow: none">
+								</a>
+							</div>
+				
+							<a href="https://www.gisagents.org/2016/10/agent-based-modeling-in-geographical.html" target="_blank">
+								<img src="https://3.bp.blogspot.com/-8dBibQOLxv4/V4-Kd1QmFGI/AAAAAAAAJxU/XyvLVDVfzMEDLyRDdh1Sc3z_Nq7z2xPDQCLcB/s640/Figure1.png"
+								 alt="Heppenstall and Crooks 2016" style="width: 450px; border: none; box-shadow: none">
+							</a>
+						</div>
+						<div id="right50">
+							<a href="http://jasss.soc.surrey.ac.uk/12/1/1.html" target="_blank">
+								<img src="http://jasss.soc.surrey.ac.uk/12/1/1/fig1.jpg" alt="Galan et al. 2009" style="width: 450px; border: none; box-shadow: none">
+							</a>
+						</div>
+					</div>
+					<br>&nbsp;<br>
+					<div style="font-size: 40%; text-align: right">Background: pseudo-code for the Gale–Shapley algorithm <br>
+						to solve the <a href="https://en.wikipedia.org/wiki/Stable_marriage_problem" target="_blank">Stable Marriage Problem</a></div>
+				</section>
+				
+				<section>
+					<h3>The '<i style="color:darkorange">how</i>&nbsp;'</h3>
+				</section>
+				<section id="fragments">
+					<h3>ABM modelling steps</h3>
+					<div style="position:relative; width:800px; height:595px; margin:0 auto;">
+						<img class="fragment" width="800" height="595" src="images/Activities_def.PNG" style="position:absolute;top:0;left:0;">
+						<img class="fragment" width="800" height="595" src="images/Activities_des.PNG" style="position:absolute;top:0;left:0;">
+						<img class="fragment" width="800" height="595" src="images/Activities_imp.PNG" style="position:absolute;top:0;left:0;">
+						<img class="fragment" width="800" height="595" src="images/Activities_ver.PNG" style="position:absolute;top:0;left:0;">
+						<img class="fragment" width="800" height="595" src="images/Activities_val.PNG" style="position:absolute;top:0;left:0;">
+						<img class="fragment" width="800" height="595" src="images/Activities_doc.PNG" style="position:absolute;top:0;left:0;">
+						<img class="fragment" width="800" height="595" src="images/Activities2.PNG" style="position:absolute;top:0;left:0;">
+					</div>
+				</section>
+				<section id="fragments">
+					<h4>Examples</h4>
+					<h3>Schelling's Segregation model</h3>
+					<ul style="font-size: 60%">
+						<li class="fragment">Definition:<br>the formation of racially mixed versus segregated neighborhoods in the United
+							States (c. 1960-1970)</li>
+						<li class="fragment">Design:
+							<ul>
+								<li class="fragment">two <i style="color:greenyellow">types</i> of agents</li>
+								<li class="fragment">agents occupy a <i style="color:greenyellow">position</i> in a grid</li>
+								<li class="fragment">adjacent positions are considered as <i style="color:greenyellow">neighborhood</i></li>
+								<li class="fragment">agent <i style="color:greenyellow">satisfaction</i> = ratio of neighbors of the same type (<i>homophily</i>)</li>
+								<li class="fragment">unsatisfied agents <i style="color:greenyellow">move</i> to another free position</li>
+							</ul>
+						</li>
+					</ul>
+					<br>&nbsp;<br>
+					<div style="font-size: 40%">
+						<a href="https://www.tandfonline.com/doi/abs/10.1080/0022250X.1971.9989794" target="_blank">
+							Schelling, Thomas. 1971. “Dynamic Models of Segregation.” Journal of Mathematical Sociology 1 (143-186).</a>
+					</div>
+				</section>
+				<section id="fragments">
+					<h4>Examples</h4>
+					<h3>Schelling's Segregation model</h3>
+					<div style="position:relative; width:800px; height:600px; margin:0 auto;">
+						<img class="fragment" width="843" height="505" src="images/Schelling-code.PNG" style="position:absolute;top:0;left:0;">
+						<img class="fragment" width="797" height="358" src="images/Schelling-result.png" style="position:absolute;top:0;left:0;">
+					</div>
+				</section>
+				<section id="fragments">
+					<h4>Examples</h4>
+					<h3>Schelling's Segregation model</h3>
+					<a href="http://ccl.northwestern.edu/netlogo/models/Segregation" target="_blank">
+						<img src="images/Segregation Simple interface.png" alt="shelling-netlogo"
+						style="width: 350px; border: none; box-shadow: none">
+					</a>
+					<a href="https://ncase.me/polygons" target="_blank">
+						<img src="images/ncase-shelling.PNG" alt="ncase-shelling"
+						style="width: 450px; border: none; box-shadow: none; vertical-align:super">
+					</a>
+				</section>
+				<section id="fragments">
+					<h4>Examples</h4>
+					<h3>Artificial Anasazi</h3>
+				
+					<div id="right40" style="font-size: 40%">
+						Axtell, R. L., Epstein, J. M., Dean, J. S., Gumerman, G. J., Swedlund, A. C., Harburger, J., … Parker, M. (2002).
+						Population growth and collapse in a multiagent model of the Kayenta Anasazi in Long House Valley. Proceedings of the
+						National Academy of Sciences, 99(Supplement 3), 7275–7279.
+						<a href="https://doi.org/10.1073/pnas.092080799" target="_blank">https://doi.org/10.1073/pnas.092080799</a>
+						<br>&nbsp;<br>
+						Janssen, M. A. (2009). Understanding Artificial Anasazi. Journal of Artificial Societies and Social Simulation, 12(4). <a href="http://jasss.soc.surrey.ac.uk/12/4/13.html"
+						 target="_blank">http://jasss.soc.surrey.ac.uk/12/4/13.html</a>
+					</div>
+					<div id="left60">
+						<img src="images/ArtificialAnasazi.PNG">
+					</div>
+				</section>
+				<section id="fragments">
+					<h4>Examples</h4>
+					<h3>HOMINIDS</h3>
+					<div style="font-size: 40%">
+						Griffith, C. S., Long, B. L., and Sept, J. M. (2010). HOMINIDS: An agent-based spatial simulation model to evaluate
+						behavioral patterns of early Pleistocene hominids. Ecological Modelling, 221(5), 738–760.
+						<a href="https://doi.org/10.1016/j.ecolmodel.2009.11.009" target="_blank">https://doi.org/10.1016/j.ecolmodel.2009.11.009</a>
+					</div>
+					<div style="position:relative; width:600px; height:500px; margin:0 auto;">
+						<img src="images/griffin-et-al-2010-fig1.PNG" style="position:absolute;top:0;left:0;">
+						<img class="fragment" src="images/griffin-et-al-2010-fig6b.PNG" style="position:absolute;top:0;left:0;">
+					</div>
+				</section>
+				<section id="fragments">
+					<h4>Examples</h4>
+					<h3>MedLanD</h3>
+				
+					<div style="font-size: 40%">
+						Barton, C. M., Ullah, I. I. T., Bergin, S. M., Mitasova, H., and Sarjoughian, H. (2012). Looking for the future in
+						the
+						past: Long-term change in socioecological systems. Ecological Modelling, 241, 42–53.
+						<a href="https://doi.org/10.1016/j.ecolmodel.2012.02.010" target="_blank">https://doi.org/10.1016/J.ECOLMODEL.2012.02.010</a>
+					</div>
+					<div style="position:relative; width:800px; height:600px; margin:0 auto;">
+						<img src="images/Barton-et-al-2012-fig2.PNG" style="position:absolute;top:0;left:0;">
+						<img class="fragment" src="images/Barton-et-al-2012-fig12bc.PNG" style="position:absolute;top:0;left:0;">
+					</div>
+				</section>
+				<section id="fragments">
+					<h4>Examples</h4>
+					<h3>HouseholdsWorld</h3>
+					<div style="font-size: 40%">
+						Rogers, J. D., Nichols, T., Emmerich, T., Latek, M., and Cioffi-Revilla, C. (2012). Modeling scale and variability in
+						human–environmental interactions in Inner Asia. Ecological Modelling, 241, 5–14.
+						<a href="https://doi.org/10.1016/J.ECOLMODEL.2011.11.025" target="_blank">https://doi.org/10.1016/J.ECOLMODEL.2011.11.025</a>
+					</div>
+					<div style="position:relative; width:600px; height:500px; margin:0 auto;">
+						<img src="images/Rogers-et-al-2012-fig1.PNG" style="position:absolute;top:0;left:0;">
+						<img class="fragment" src="images/Rogers-et-al-2012-fig5.PNG" style="position:absolute;top:0;left:0;">
+					</div>
+				</section>
+				
+				<section>
+					<h3><i style="color:darkorange">Expectations</i></h3>
+				</section>
+				<section id="fragments">
+					<h3>Grand challenges (method)</h3>
+					<ul>
+						<li class="fragment">Disambiguation</li>
+						<li class="fragment">Consolidation of shared models</li>
+						<li class="fragment">Virtual laboratory</li>
+						<li class="fragment">Interdisciplinary approach</li>
+					</ul>
+					<br>&nbsp;<br>
+					<div class="fragment" style="font-size: 40%">
+							Epstein, J. M. (2008). Why Model? Journal of Artificial Societies and Social Simulation, 11(4), 12. 
+						<a href="http://jasss.soc.surrey.ac.uk/11/4/12.html" target="_blank">http://jasss.soc.surrey.ac.uk/11/4/12.html</a>
+					</div>
+				</section>
+				<section id="fragments">
+					<h3>Grand challenges (theory)</h3>
+					<ul>
+						<li class="fragment">Emergence of social and socio-ecological systems</li>
+						<li class="fragment">Resilience, adaptation, change, collapse</li>
+						<li class="fragment">Space and mobility</li>
+						<li class="fragment">Behaviour and cognition</li>
+					</ul>
+					<br>&nbsp;<br>
+					<div class="fragment" style="font-size: 40%">
+						Kintigh, K. W., Altschul, J. H., Beaudry, M. C., Drennan, R. D., Kinzig, A. P., Kohler, T. A., … Zeder, M. A. (2014).
+						Grand challenges for archaeology. Proceedings of the National Academy of Sciences of the United States of America,
+						111(3), 879–880.
+						<a href="https://doi.org/10.1073/pnas.1324000111" target="_blank">https://doi.org/10.1073/pnas.1324000111</a>
+					</div>
+					</section>
+					<section id="fragments">
+						<div id="left50">
+							<a href="https://www.economist.com/finance-and-economics/2010/07/22/agents-of-change" target="_blank">
+								<img src="https://computationallegalstudies.com/wp-content/uploads/2010/07/Picture-9.jpg" alt="The Economist" style="width: 600px; border: none; box-shadow: none">
+							</a>
+						</div>
+						<div id="right50">
+							<ul>
+								<li class="fragment">Social processes linked to materiality</li>
+								<li class="fragment">Any spatial or time scale</li>
+								<li class="fragment">Data standardization and collection</li>
+								<li class="fragment">Theory building/hypothesis generation</li>
+							</ul>
+						</div>
+						<br>&nbsp;<br>
+						<div class="fragment" style="font-size: 40%">
+							Madella, M., Rondelli, B., Lancelotti, C., Balbo, A. L., Zurro, D., Rubio Campillo, X., & Stride, S. (2014).
+							Introduction to Simulating the Past. Journal of Archaeological Method and Theory, 21(2), 251–257.
+							<a href="https://doi.org/10.1007/s10816-014-9209-8" target="_blank">https://doi.org/10.1007/s10816-014-9209-8</a>
+							<br>&nbsp;<br>
+							Rogers, J. D., & Cegielski, W. H. (2017). Opinion: Building a better past with the help of agent-based modeling.
+							Proceedings of the National Academy of Sciences of the United States of America, 114(49), 12841–12844.
+							<a href="https://doi.org/10.1073/pnas.1718277114" target="_blank">https://doi.org/10.1073/pnas.1718277114</a>
+							<br>&nbsp;<br>
+							Cegielski, W. H., & Rogers, J. D. (2016). Rethinking the role of Agent-Based Modeling in archaeology. Journal of Anthropological Archaeology, 41, 283–298. 
+							<a href="https://doi.org/10.1016/J.JAA.2016.01.009" target="_blank">https://doi.org/10.1016/J.JAA.2016.01.009</a>
+						</div>
+					</section>
+					<section id="fragments">
+						<h3>Caveats</h3>
+						<ul>
+							<li class="fragment">NOT magical solution!</li>
+							<li class="fragment">Still long way to set a "standard"</li>
+							<li class="fragment">Steep learning curve (for all involved)</li>
+							<li class="fragment">Inherits any theoretical/methodological biases</li>
+							<li class="fragment">Validation, documentation and understanding often underdeveloped tasks</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Future?</h3>
+						Project Highrise
+						<a href="http://www.somasim.com/blog/2016/06/project-highrise-architects-notes-for-june-23-2016/">
+							<img src="http://www.somasim.com/blog/wp-content/uploads/2016/06/lunch.gif">
+						</a>
+					</section>
+
+				<section data-state="title-page">
+					<h2>Agent-based modelling in archaeology</h2>
+					Why do it, how to do it, and what to expect
+					<p>
+						<small style="color:gainsboro;">Andreas <b>Angourakis</b></small> 
+						<small><a href="https://twitter.com/AndrosSpica" target="_blank"><i style="color:dodgerblue">@AndrosSpica</i></a></small>
+					</p>
+					<p style="color:aquamarine">THANK YOU!</p>
+					<div style="font-size: 50%">available at 
+						<a href="https://andros-spica.github.io/CDAL-Angourakis-2019/">https://andros-spica.github.io/CDAL-Angourakis-2019/</a><br>
+						<a href="https://andros-spica.github.io/CDAL-Angourakis-2019/index.html?print-pdf">https://andros-spica.github.io/CDAL-Angourakis-2019/index.html?print-pdf</a> (printable version)
+					</div>
+					<p style="font-size:33%">click on images to consult source</p>
+					<a href="https://www.arch.cam.ac.uk/" target="_blank">
+						<img src="https://www.cam.ac.uk/sites/www.cam.ac.uk/files/inner-images/logo.jpg" alt="U. Cambridge logo" 
+						style="width: 300px; border: none; box-shadow: none"/>
+					</a>
+					<a href="https://www.mcdonald.cam.ac.uk/" target="_blank">
+						<img src="https://www.mcdonald.cam.ac.uk/images/logos/McD-logo3/image_logo" alt="McDonald Institute logo" 
+						style="width: 80px; border: none; box-shadow: none"/>
+						<b style="font-size: 60%; color:darkgray; vertical-align:150%">McDonald Institute for Archaeological Research</b>
+					</a>
+				</section>
+
+				<section>
+						<h3>further references</h3>
+						<a href="https://github.com/ArchoLen/The-ABM-in-Archaeology-Bibliography">The-ABM-in-Archaeology-Bibliography</a> 
+						<br>by Iza Romanowska and Lennart Linde
+					</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/search/search.js', async: true },
+					{ src: 'plugin/zoom-js/zoom.js', async: true }
+				]
+			});
+		</script>
+
+	</body>
+</html>
