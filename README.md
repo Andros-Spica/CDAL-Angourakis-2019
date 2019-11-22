@@ -4,7 +4,7 @@ Presentation for the **CDAL** seminar at the Department of Archaeology, Universi
 
 Prepared with *reveal.js* (see https://revealjs.com/).
 
-https://andros-spica.github.io/CDAL-Angourakis-2019/
+Slides: https://andros-spica.github.io/CDAL-Angourakis-2019/
 
 **Authors**  
 
