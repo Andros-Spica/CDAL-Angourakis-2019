@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/168505870.svg)](https://zenodo.org/badge/latestdoi/168505870)
+
 # Agent-based modelling in archaeology: Why do it, how to do it, and what to expect
 
 Presentation for the **CDAL** seminar at the Department of Archaeology, University of Cambridge, on 5th February 2019 ([Lent term series](https://github.com/Andros-Spica/CDAL-Angourakis-2019/lent-cdal.pdf)).
